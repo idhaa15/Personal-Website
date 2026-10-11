@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#141518" />
+    <meta name="description" content="A personal portfolio of work, experience, and skills." />
+    <title>Idhaa Narwadkar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=B612+Mono&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23050505'/%3E%3Cpath d='M10 4v24M21 4v24M4 10h24M4 21h24' stroke='%23909090'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css?v=6" />
+    <script src="./background.js?v=2" defer></script>
+    <script src="./blueprint-motion.js?v=2" defer></script>
+    <script src="./project-carousel.js?v=3" defer></script>
+    <script src="./skills.js" defer></script>
+    <script src="./extracurriculars.js" defer></script>
+    <!-- Medium articles script: uncomment when restoring the Medium section. -->
+    <!-- <script src="./writings.js" defer></script> -->
+    <script src="./contact.js" defer></script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Portfolio sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#extracurriculars">Extracurriculars</a></li>
+        <!-- Medium navigation: uncomment when restoring the Medium section. -->
+        <!-- <li><a href="#medium">Medium</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="background" aria-hidden="true">
+      <div class="background__grid"></div>
+      <div class="background__glow"></div>
+    </div>
+    <div class="pointer-glow" aria-hidden="true"></div>
+    <main aria-label="Personal portfolio">
+      <section class="intro" id="about" aria-labelledby="intro-heading">
+        <canvas class="blueprint-grid" data-blueprint-grid aria-hidden="true"></canvas>
+        <div class="intro__oval-cluster intro__oval-cluster--corner" aria-hidden="true">
+          <svg viewBox="0 0 760 560" role="presentation">
+            <ellipse class="intro__oval intro__oval--one" cx="330" cy="276" rx="276" ry="182" />
+            <ellipse class="intro__oval intro__oval--two" cx="370" cy="264" rx="270" ry="190" />
+            <ellipse class="intro__oval intro__oval--four" cx="348" cy="298" rx="300" ry="154" />
+          </svg>
+        </div>
+        <div class="intro__oval-cluster" aria-hidden="true">
+          <svg viewBox="0 0 760 560" role="presentation">
+            <ellipse class="intro__oval intro__oval--one" cx="330" cy="276" rx="276" ry="182" />
+            <ellipse class="intro__oval intro__oval--two" cx="370" cy="264" rx="270" ry="190" />
+            <ellipse class="intro__oval intro__oval--three" cx="348" cy="298" rx="300" ry="154" />
+            <ellipse class="intro__oval intro__oval--four" cx="390" cy="286" rx="236" ry="206" />
+          </svg>
+        </div>
+        <div class="intro__copy">
+          <h1 id="intro-heading"><span>Hello.</span><span>I'm Idhaa.</span></h1>
+          <ul class="intro__profile" aria-label="About Idhaa">
+            <li>ME undergrad at IIT Guwahati, class of 2028</li>
+            <li>found my way into the world of machine learning and AI through robotics and physical systems</li>
+            <li>i love all things systems, ml and spend several browser tabs each day trying to keep up with AI</li>
+            <li>also tried my hand at data structures and algorithms, ended up grinding cp problems for fun</li>
+          </ul>
+          <nav class="intro__socials" aria-label="Social links">
+            <a href="https://github.com/idhaa15" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)" title="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.5 11.5 0 0 0 8.36 23.1c.58.11.79-.25.79-.56v-2.24c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.29-5.27-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.47.11-3.05 0 0 .96-.31 3.16 1.18a10.95 10.95 0 0 1 5.75 0c2.2-1.49 3.16-1.18 3.16-1.18.62 1.58.23 2.76.11 3.05.73.81 1.18 1.83 1.18 3.09 0 4.41-2.71 5.39-5.29 5.68.42.36.79 1.06.79 2.14v3.18c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .7Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/idhaanarwadkar/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.57h.05c.47-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.42a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.03H3.54V8.99H7.1v11.46Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/idhaanarwadkar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)" title="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M7.1 2h9.8A5.1 5.1 0 0 1 22 7.1v9.8a5.1 5.1 0 0 1-5.1 5.1H7.1A5.1 5.1 0 0 1 2 16.9V7.1A5.1 5.1 0 0 1 7.1 2Zm-.17 2A2.93 2.93 0 0 0 4 6.93v10.14A2.93 2.93 0 0 0 6.93 20h10.14A2.93 2.93 0 0 0 20 17.07V6.93A2.93 2.93 0 0 0 17.07 4H6.93ZM12 7.14A4.86 4.86 0 1 1 12 16.86 4.86 4.86 0 0 1 12 7.14Zm0 2A2.86 2.86 0 1 0 12 14.86 2.86 2.86 0 0 0 12 9.14Zm6.42-2.23a1.17 1.17 0 1 1-2.34 0 1.17 1.17 0 0 1 2.34 0Z"/></svg>
+            </a>
+            <a href="https://medium.com/@idhaanarwadkar" target="_blank" rel="noopener noreferrer" aria-label="Medium (opens in a new tab)" title="Medium">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5h5.1l5.14 11.27L16.8 5.5H22v1.12l-1.4 1.06v8.64l1.4 1.06v1.12h-7v-1.12l1.46-1.06V9.5L11.1 22H9.95L4.18 9.37v6.09l1.87 1.92v1.12H2v-1.12l1.88-1.92V8.18L2 6.62V5.5Z"/></svg>
+            </a>
+            <a href="mailto:idhaanarwadkar@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email Idhaa (opens your mail app)" title="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4.5h18A2.5 2.5 0 0 1 23.5 7v10A2.5 2.5 0 0 1 21 19.5H3A2.5 2.5 0 0 1 .5 17V7A2.5 2.5 0 0 1 3 4.5Zm0 2 9 6.27L21 6.5H3Zm18.5 2.43-8.93 6.22a1 1 0 0 1-1.14 0L2.5 8.93V17c0 .28.22.5.5.5h18a.5.5 0 0 0 .5-.5V8.93Z"/></svg>
+            </a>
+          </nav>
+        </div>
+        <div class="intro__portrait-stage">
+          <figure class="terminal-portrait">
+            <div class="terminal-portrait__bar" aria-hidden="true">
+              <span class="terminal-portrait__dot terminal-portrait__dot--red"></span>
+              <span class="terminal-portrait__dot terminal-portrait__dot--yellow"></span>
+              <span class="terminal-portrait__dot terminal-portrait__dot--green"></span>
+            </div>
+            <img
+              src="./assets/idhaa-portrait.jpg"
+              alt="Idhaa smiling by the waterfront"
+              width="1170"
+              height="1526"
+            />
+          </figure>
+        </div>
+      </section>
+      <section class="projects" id="projects" aria-labelledby="projects-heading">
+        <canvas class="blueprint-grid" data-blueprint-grid aria-hidden="true"></canvas>
+        <div class="projects__orb" aria-hidden="true"></div>
+        <div class="projects__heading">
+          <p>Selected work</p>
+          <h2 id="projects-heading">Projects</h2>
+          <span>Drag, swipe, or use the arrow keys</span>
+        </div>
+        <div
+          class="projects__viewport"
+          tabindex="0"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Project placards"
+        >
+          <div class="projects__track">
+            <article class="project-card" data-project-card>
+              <div class="project-card__chrome" aria-hidden="true">
+                <div class="project-card__traffic"><span></span><span></span><span></span></div>
+                <span class="project-card__window-title">medilens.app</span>
+                <div class="project-card__tools"><span>‹</span><span>☷</span><span>▦</span><span>↗</span></div>
+              </div>
+              <header class="project-card__tab">
+                <span>2026</span>
+              </header>
+              <div class="project-card__visual project-card__visual--image">
+                <img
+                  src="./assets/projects/medilens-pipeline.png"
+                  alt="MediLens safety-bounded emergency triage pipeline diagram"
+                  width="1200"
+                  height="668"
+                />
+              </div>
+              <div class="project-card__copy">
+                <p>Healthcare AI · LangGraph, FastAPI, Gemini, React</p>
+                <h3>MediLens</h3>
+                <span>AI-assisted emergency triage system I built for Accenture’s Innovation Challenge — orchestrates a safety-bounded LLM pipeline (LangGraph + Gemini) with deterministic escalation floors, clinician override, and full audit logging.</span>
+              </div>
+            </article>
+            <article class="project-card" data-project-card>
+              <div class="project-card__chrome" aria-hidden="true">
+                <div class="project-card__traffic"><span></span><span></span><span></span></div>
+                <span class="project-card__window-title">cvm++.app</span>
+                <div class="project-card__tools"><span>‹</span><span>☷</span><span>▦</span><span>↗</span></div>
+              </div>
+              <header class="project-card__tab">
+                <span>2026</span>
+              </header>
+              <div class="project-card__visual project-card__visual--image">
+                <img
+                  src="./assets/projects/cvm-pipeline.svg"
+                  alt="CVM++ five-stage compiler and virtual machine pipeline diagram"
+                  width="680"
+                  height="520"
+                />
+              </div>
+              <div class="project-card__copy">
+                <p>Systems / Compilers</p>
+                <h3>CVM++</h3>
+                <span>Custom scripting language and stack-based VM built from scratch in C++17. Implements a full 5-stage compiler pipeline — Lexer, Parser, AST, Bytecode Compiler, and VM — with zero external dependencies.</span>
+              </div>
+            </article>
+            <article class="project-card project-card--interpretability" data-project-card>
+              <div class="project-card__chrome" aria-hidden="true">
+                <div class="project-card__traffic"><span></span><span></span><span></span></div>
+                <span class="project-card__window-title">activation-atlas.app</span>
+                <div class="project-card__tools"><span>‹</span><span>☷</span><span>▦</span><span>↗</span></div>
+              </div>
+              <header class="project-card__tab">
+                <span>Jan—Mar 2026</span>
+              </header>
+              <div class="project-card__visual project-card__visual--image">
+                <img
+                  src="./assets/projects/activation-atlas.svg"
+                  alt="Activation Atlas showing clustered sparse latent neurons and a highlighted five-percent activation path"
+                  width="1200"
+                  height="668"
+                />
+              </div>
+              <div class="project-card__copy">
+                <p>Mechanistic Interpretability · Transformers, Plotly, Graph Analysis</p>
+                <h3>Neural Interpretability and Activation Mapping in Post-Transformer Architectures</h3>
+                <span>Activation Atlas built for Kriti — IITG’s Inter-Hostel Tech Competition—to diagnose transformer black-box behavior. Maps internal firing patterns across datasets into graph-localized monosemantic synapses, visualizes sparse reasoning, and demonstrates BDH’s 5% neuron activation rate in a Plotly deployment.</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="projects__controls" aria-label="Project carousel controls">
+          <button type="button" data-project-prev aria-label="Previous project">←</button>
+          <span data-project-count aria-live="polite">01 / 03</span>
+          <button type="button" data-project-next aria-label="Next project">→</button>
+        </div>
+      </section>
+      <section class="arsenal" id="skills" aria-labelledby="arsenal-heading">
+        <canvas class="blueprint-grid" data-blueprint-grid aria-hidden="true"></canvas>
+        <header class="arsenal__heading">
+          <p>System inventory</p>
+          <h2 id="arsenal-heading">The Arsenal</h2>
+          <span>Select a module to inspect the stack</span>
+        </header>
+
+        <div class="arsenal-window" data-arsenal-window>
+          <div class="arsenal-window__chrome" aria-hidden="true">
+            <div class="arsenal-window__traffic"><span></span><span></span><span></span></div>
+            <span>arsenal.system_profile</span>
+            <div class="arsenal-window__chrome-tools"><span>⌁</span><span>▦</span><span>⋯</span></div>
+          </div>
+
+          <div class="arsenal-window__body">
+            <nav class="arsenal-sidebar" aria-label="Skill categories">
+              <p>Modules</p>
+              <button class="is-active" type="button" data-skill-tab="ai" aria-selected="true">
+                <span>GenAI / ML</span><small>09</small>
+              </button>
+              <button type="button" data-skill-tab="programming" aria-selected="false">
+                <span>Programming</span><small>04</small>
+              </button>
+              <button type="button" data-skill-tab="tools" aria-selected="false">
+                <span>Tools / Frameworks</span><small>05</small>
+              </button>
+              <button type="button" data-skill-tab="web" aria-selected="false">
+                <span>Web Development</span><small>05</small>
+              </button>
+              <button type="button" data-skill-tab="business" aria-selected="false">
+                <span>BI &amp; Design Tools</span><small>06</small>
+              </button>
+              <button type="button" data-skill-tab="mechanical" aria-selected="false">
+                <span>Mechanical Software</span><small>04</small>
+              </button>
+            </nav>
+
+            <div class="arsenal-content" data-arsenal-content>
+              <section class="skill-panel is-active" data-skill-panel="ai" aria-labelledby="skill-ai-title">
+                <header><span>01 / module</span><h3 id="skill-ai-title">GenAI / ML</h3></header>
+                <ul class="skill-grid">
+                  <li data-skill-tile><span>01</span>Deep Learning</li>
+                  <li data-skill-tile><span>02</span>NLP</li>
+                  <li data-skill-tile><span>03</span>Computer Vision</li>
+                  <li data-skill-tile><span>04</span>Prompt Engineering</li>
+                  <li class="is-elementary" data-skill-tile><span>05</span>RAG<sup>*</sup></li>
+                  <li data-skill-tile><span>06</span>Agentic AI Frameworks</li>
+                  <li data-skill-tile><span>07</span>PyTorch</li>
+                  <li data-skill-tile><span>08</span>TensorFlow</li>
+                  <li data-skill-tile><span>09</span>Scikit-learn</li>
+                </ul>
+              </section>
+
+              <section class="skill-panel" data-skill-panel="programming" aria-labelledby="skill-programming-title" hidden>
+                <header><span>02 / module</span><h3 id="skill-programming-title">Programming</h3></header>
+                <ul class="skill-grid">
+                  <li data-skill-tile><span>01</span>C++</li>
+                  <li data-skill-tile><span>02</span>C</li>
+                  <li data-skill-tile><span>03</span>Python</li>
+                  <li class="is-elementary" data-skill-tile><span>04</span>JavaScript<sup>*</sup></li>
+                </ul>
+                <div class="coding-profiles" aria-label="Competitive programming profiles">
+                  <a href="https://codeforces.com/profile/idhaa.n" target="_blank" rel="noopener noreferrer">
+                    <span>Codeforces</span><strong>@idhaa.n</strong><i aria-hidden="true">↗</i>
+                  </a>
+                  <a href="https://leetcode.com/u/idhaa_n/" target="_blank" rel="noopener noreferrer">
+                    <span>LeetCode</span><strong>@idhaa_n</strong><i aria-hidden="true">↗</i>
+                  </a>
+                </div>
+              </section>
+
+              <section class="skill-panel" data-skill-panel="tools" aria-labelledby="skill-tools-title" hidden>
+                <header><span>03 / module</span><h3 id="skill-tools-title">Tools / Frameworks</h3></header>
+                <ul class="skill-grid">
+                  <li data-skill-tile><span>01</span>NumPy</li>
+                  <li data-skill-tile><span>02</span>Pandas</li>
+                  <li class="is-elementary" data-skill-tile><span>03</span>Matplotlib<sup>*</sup></li>
+                  <li class="is-elementary" data-skill-tile><span>04</span>Cytoscape.js<sup>*</sup></li>
+                  <li data-skill-tile><span>05</span>Git</li>
+                </ul>
+              </section>
+
+              <section class="skill-panel" data-skill-panel="web" aria-labelledby="skill-web-title" hidden>
+                <header><span>04 / module</span><h3 id="skill-web-title">Web Development</h3></header>
+                <ul class="skill-grid">
+                  <li data-skill-tile><span>01</span>HTML</li>
+                  <li data-skill-tile><span>02</span>CSS</li>
+                  <li data-skill-tile><span>03</span>React.js</li>
+                  <li class="is-elementary" data-skill-tile><span>04</span>Django<sup>*</sup></li>
+                  <li data-skill-tile><span>05</span>Node.js</li>
+                </ul>
+              </section>
+
+              <section class="skill-panel" data-skill-panel="business" aria-labelledby="skill-business-title" hidden>
+                <header><span>05 / module</span><h3 id="skill-business-title">Business Intelligence &amp; Design Tools</h3></header>
+                <ul class="skill-grid">
+                  <li data-skill-tile><span>01</span>MySQL</li>
+                  <li data-skill-tile><span>02</span>PostgreSQL</li>
+                  <li data-skill-tile><span>03</span>Tableau</li>
+                  <li data-skill-tile><span>04</span>Power BI</li>
+                  <li data-skill-tile><span>05</span>Figma</li>
+                  <li data-skill-tile><span>06</span>Canva</li>
+                </ul>
+              </section>
+
+              <section class="skill-panel" data-skill-panel="mechanical" aria-labelledby="skill-mechanical-title" hidden>
+                <header><span>06 / module</span><h3 id="skill-mechanical-title">Mechanical Software</h3></header>
+                <ul class="skill-grid">
+                  <li data-skill-tile><span>01</span>Fusion 360</li>
+                  <li data-skill-tile><span>02</span>Solid Edge</li>
+                  <li class="is-elementary" data-skill-tile><span>03</span>ROS<sup>*</sup></li>
+                  <li data-skill-tile><span>04</span>ANSYS</li>
+                </ul>
+              </section>
+
+              <footer class="arsenal-content__legend"><span>*</span> Elementary proficiency</footer>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="extracurriculars" id="extracurriculars" aria-labelledby="extracurriculars-heading">
+        <canvas class="blueprint-grid" data-blueprint-grid aria-hidden="true"></canvas>
+        <header class="extracurriculars__heading">
+          <p>Extracurriculars</p>
+          <h2 id="extracurriculars-heading">Outside the Terminal</h2>
+          <span>Roles, interests, and things worth keeping around</span>
+        </header>
+
+        <div class="archive-grid" data-archive-grid>
+          <article class="archive-card archive-card--tennis" data-archive-card>
+            <header class="archive-card__header">
+              <span>01 / Leadership</span><small>On court</small>
+            </header>
+            <div class="photo-rotator" data-photo-rotator>
+              <div class="photo-rotator__slide photo-rotator__slide--one is-active" data-photo-slide><img src="./assets/tennis/tennis-01.jpg" alt="Idhaa preparing a backhand on a tennis court" /></div>
+              <div class="photo-rotator__slide photo-rotator__slide--two" data-photo-slide><img src="./assets/tennis/tennis-02.jpg" alt="Idhaa following through during a tennis match" /></div>
+              <div class="photo-rotator__slide photo-rotator__slide--three" data-photo-slide><img src="./assets/tennis/tennis-03.jpg" alt="Idhaa ready to receive serve on a tennis court" /></div>
+              <div class="photo-rotator__slide photo-rotator__slide--four" data-photo-slide><img src="./assets/tennis/tennis-04.jpg" alt="Idhaa returning a tennis ball in motion" /></div>
+              <div class="photo-rotator__dots" aria-hidden="true"><span class="is-active"></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="archive-card__copy">
+              <h3>Lawn Tennis Secretary</h3>
+              <p data-tennis-copy-primary>Directed operations for a 70+ member club, managing budget and logistics for Inter-IIT selection trials and training camps, achieved a 1.5x+ YoY increase in court recruitment.</p>
+              <p data-tennis-copy-secondary hidden>I also competed in state and national level lawn tennis and Inter IIT and Inter Hostel competitions, also enjoy consuming tennis in the form of media when I can't hit the ball around.</p>
+            </div>
+          </article>
+
+          <article class="archive-card archive-card--robotics" data-archive-card>
+            <header class="archive-card__header">
+              <span>02 / Leadership</span><small>Build mode</small>
+            </header>
+            <div class="compact-deck" data-card-deck>
+              <div class="compact-deck__stage">
+                <section class="compact-deck__slide is-active" data-deck-slide>
+                  <small>Overview</small><h3>Robotics Club Media Head</h3><p>Heading the Robotics Club of my institute as the media head and core team member for the tenure 26–27, basically organising and conducting workshops and then running around with a camera documenting them for memories.</p>
+                </section>
+                <section class="compact-deck__slide" data-deck-slide hidden>
+                  <small>Activity 01</small><h3>Track Titans</h3><p>Represented the Robotics Club by building an RC engine car using ESP32 in the Track Titans Bot Building competition. Fun fact: our car crashed into a wall during a practice run two hours before the competition; we rebuilt the whole thing with spare parts and managed to clear round one.</p>
+                </section>
+                <section class="compact-deck__slide" data-deck-slide hidden>
+                  <small>Activity 02</small><h3>Activity title</h3><p>Add the next workshop, project, or initiative.</p>
+                </section>
+                <section class="compact-deck__slide" data-deck-slide hidden>
+                  <small>Activity 03</small><h3>Activity title</h3><p>Add another club activity here.</p>
+                </section>
+              </div>
+              <footer class="compact-deck__controls"><span data-deck-count>01 / 04</span><button type="button" data-deck-next aria-label="Show next robotics activity">→</button></footer>
+            </div>
+          </article>
+
+          <article class="archive-card archive-card--achievements" data-archive-card>
+            <header class="archive-card__header">
+              <span>03 / Archive</span><small>Milestones</small>
+            </header>
+            <div class="compact-deck" data-card-deck>
+              <div class="compact-deck__stage">
+                <section class="compact-deck__slide is-active" data-deck-slide>
+                  <small>Competition 01</small><h3>Amazon ML Challenge 2026</h3><p>Ranked among the top 1,000 among 90,000 registered participants.</p>
+                </section>
+                <section class="compact-deck__slide" data-deck-slide hidden>
+                  <small>Competition 02</small><h3>Flipkart GRiD 8.0</h3><p>National semi-finalist in the Software Development Track.</p>
+                </section>
+                <section class="compact-deck__slide" data-deck-slide hidden>
+                  <small>Competition 03</small><h3>Convolve 4.0</h3><p>Pan-IIT AI/ML hackathon — semi-finalist in the GenAI Track.</p>
+                </section>
+              </div>
+              <footer class="compact-deck__controls"><span data-deck-count>01 / 03</span><button type="button" data-deck-next aria-label="Show next achievement">→</button></footer>
+            </div>
+          </article>
+
+          <article class="archive-card archive-card--books" data-archive-card>
+            <header class="archive-card__header">
+              <span>04 / Library</span><small>Reading room</small>
+            </header>
+            <div class="reading-lists">
+              <section>
+                <h3>Favourites</h3>
+                <ol>
+                  <li><strong>Little Women</strong><span>Louisa May Alcott</span></li>
+                  <li><strong>Angels &amp; Demons</strong><span>Dan Brown</span></li>
+                  <li><strong>A Court of Thorns and Roses</strong><span>Sarah J. Maas</span></li>
+                  <li><strong>The Mossad</strong></li>
+                  <li><strong>The Alchemist</strong><span>Paulo Coelho</span></li>
+                  <li><strong>The Chronicles of Narnia</strong><span>C. S. Lewis</span></li>
+                </ol>
+              </section>
+              <section>
+                <h3>To read</h3>
+                <ol>
+                  <li><strong>The Laws of Human Nature</strong><span>Robert Greene</span></li>
+                  <li><strong>Jane Eyre</strong><span>Charlotte Brontë</span></li>
+                  <li><strong>The Secret History</strong><span>Donna Tartt</span></li>
+                  <li><strong>India, That Is Bharat</strong><span>J. Sai Deepak</span></li>
+                </ol>
+              </section>
+            </div>
+          </article>
+
+          <article class="archive-card archive-card--music" data-archive-card>
+            <header class="archive-card__header">
+              <span>05 / Rotation</span><small>Now playing</small>
+            </header>
+            <div class="music-rotator" data-music-rotator>
+              <section class="music-slide is-active" data-music-slide>
+                <img class="album-cover" src="./assets/music/radio-ga-ga.jpg" alt="The Works album cover by Queen" /><div><small>Queen · The Works</small><h3>Radio Ga Ga</h3></div>
+              </section>
+              <section class="music-slide" data-music-slide hidden>
+                <img class="album-cover" src="./assets/music/wake-me-up.jpg" alt="Make It Big album cover by Wham!" /><div><small>Wham! · Make It Big</small><h3>Wake Me Up Before You Go-Go</h3></div>
+              </section>
+              <section class="music-slide" data-music-slide hidden>
+                <img class="album-cover" src="./assets/music/starman.jpg" alt="The Rise and Fall of Ziggy Stardust album cover by David Bowie" /><div><small>David Bowie · Ziggy Stardust</small><h3>Starman</h3></div>
+              </section>
+              <section class="music-slide" data-music-slide hidden>
+                <img class="album-cover" src="./assets/music/mamma-mia.jpg" alt="ABBA album cover" /><div><small>ABBA · ABBA</small><h3>Mamma Mia</h3></div>
+              </section>
+              <div class="music-progress" aria-hidden="true"><span></span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- Medium articles section: uncomment this block and the matching nav/script entries to restore it.
+      <section class="writings" id="medium" aria-labelledby="writings-heading">
+        <canvas class="blueprint-grid" data-blueprint-grid aria-hidden="true"></canvas>
+        <header class="writings__heading">
+          <p>Writing on Medium</p>
+          <h2 id="writings-heading">Notes in Public</h2>
+          <a href="https://medium.com/@idhaanarwadkar" target="_blank" rel="noopener noreferrer">View profile ↗</a>
+        </header>
+        <div class="writing-stack" data-writing-stack>
+          <article class="writing-card" data-writing-card>
+            <header class="writing-card__chrome"><span>Article 01</span><span>Medium / Draft</span></header>
+            <div class="writing-card__cover writing-card__cover--one" aria-hidden="true"><span>01</span><i></i><i></i><i></i></div>
+            <div class="writing-card__body"><p>Month 2026 <span>·</span> 5 min read</p><h3>Article title goes here</h3><span>Add a short preview of the article and the idea it explores.</span></div>
+            <footer><span>Topic / Tag</span><span>Read on Medium ↗</span></footer>
+          </article>
+          <article class="writing-card" data-writing-card>
+            <header class="writing-card__chrome"><span>Article 02</span><span>Medium / Draft</span></header>
+            <div class="writing-card__cover writing-card__cover--two" aria-hidden="true"><span>02</span><i></i><i></i><i></i></div>
+            <div class="writing-card__body"><p>Month 2026 <span>·</span> 7 min read</p><h3>Article title goes here</h3><span>Add a short preview of the article and the idea it explores.</span></div>
+            <footer><span>Topic / Tag</span><span>Read on Medium ↗</span></footer>
+          </article>
+          <article class="writing-card" data-writing-card>
+            <header class="writing-card__chrome"><span>Article 03</span><span>Medium / Draft</span></header>
+            <div class="writing-card__cover writing-card__cover--three" aria-hidden="true"><span>03</span><i></i><i></i><i></i></div>
+            <div class="writing-card__body"><p>Month 2026 <span>·</span> 6 min read</p><h3>Article title goes here</h3><span>Add a short preview of the article and the idea it explores.</span></div>
+            <footer><span>Topic / Tag</span><span>Read on Medium ↗</span></footer>
+          </article>
+        </div>
+      </section>
+      -->
+      <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <canvas class="blueprint-grid" data-blueprint-grid aria-hidden="true"></canvas>
+        <div class="contact__orb" aria-hidden="true"></div>
+        <div class="contact__layout">
+          <div class="contact__intro">
+            <p>Contact</p>
+            <h2 id="contact-heading">Let’s make something worth talking about.</h2>
+            <span>For projects, research, robotics, writing, or a thoughtful conversation.</span>
+            <a class="contact__email" href="mailto:idhaanarwadkar@gmail.com">idhaanarwadkar@gmail.com ↗</a>
+            <nav class="contact__links" aria-label="Contact profiles">
+              <a href="https://github.com/idhaa15" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/idhaanarwadkar/?isSelfProfile=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://medium.com/@idhaanarwadkar" target="_blank" rel="noopener noreferrer">Medium</a>
+              <a href="https://www.instagram.com/idhaanarwadkar/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </nav>
+          </div>
+
+          <form class="contact-composer" data-contact-form>
+            <header class="contact-composer__chrome">
+              <div><span></span><span></span><span></span></div>
+              <p>new_message.eml</p>
+              <small>Draft</small>
+            </header>
+            <div class="contact-composer__fields">
+              <label><span>Your name</span><input type="text" name="name" autocomplete="name" placeholder="Name" required /></label>
+              <label><span>Your email</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com" required /></label>
+              <label><span>Subject</span><input type="text" name="subject" placeholder="What would you like to talk about?" required /></label>
+              <label class="contact-composer__message"><span>Message</span><textarea name="message" rows="5" placeholder="Write your message here…" required></textarea></label>
+            </div>
+            <footer>
+              <span class="contact-composer__status" data-contact-status aria-live="polite">Sends directly from this page</span>
+              <div class="contact-composer__actions">
+                <a href="mailto:idhaanarwadkar@gmail.com">Use mail app</a>
+                <button type="submit">Send message ↗</button>
+              </div>
+            </footer>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
