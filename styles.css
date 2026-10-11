@@ -1852,6 +1852,10 @@ main { min-height: 100svh; }
     scroll-snap-align: center;
   }
 
+  .photo-rotator__slide--one img { object-position: 52% 100%; }
+  .photo-rotator__slide--two img { object-position: 52% 100%; }
+  .photo-rotator__slide--three img { object-position: 56% 100%; }
+
   .music-slide { grid-template-columns: 6.5rem 1fr; }
 
   @keyframes tennis-rally {
